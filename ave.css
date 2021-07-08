@@ -1,0 +1,72 @@
+body{
+    background-color: rgb(165, 133, 30);
+}
+#tab{
+ padding: 1em;
+ display: flex;
+        flex-direction: column;
+        padding-left: 1em; width: 80%;
+        width: 80%;
+        margin-right: auto;
+        margin-left: auto;
+        border: 5px solid rgb(22, 14, 2);
+        background-color:darkkhaki;
+}
+input{
+    margin-bottom: .2em;
+    font-size: large;
+}
+
+label{
+    font-size: x-large;
+}
+button{
+    font-size: x-large;
+}
+#avg{
+    font-weight: bold;
+    font-size: medium;
+    text-align: center;
+}
+#grade{
+    font-weight: bold;
+    text-align: center;
+    font-size: medium;
+    color: midnightblue;
+}
+#note{
+    font-weight: bold;
+    text-align: center;
+    font-size: medium;
+    color:maroon;
+    background-color: peachpuff;
+}
+#h{
+    font-weight: bold;
+    font-size: medium;
+    
+}
+#c{
+    font-weight: bold;
+    font-size: medium;
+    
+}
+#j{
+    font-weight: bold;
+    font-size: medium;
+   
+}
+#container{
+    display: grid;
+    grid-template-columns: auto auto;
+}
+#subject{
+    padding-left: 45%;
+    padding-bottom: 10px;
+}
+#marks{
+    padding-right: 30%;
+}
+if(d>35){
+    color: green;
+}

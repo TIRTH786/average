@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="ave.css">
+    <title>Document</title>
+</head>
+<body>
+    <div id="tab" > 
+    <h1>STUDENT GRADE CALCULATOR</h1>
+    
+    <label for="MATHS"><HTML>HTML :&nbsp;</label>
+    <input type="text" id="html" placeholder="Enter number">&nbsp;<br>
+    <label for="MATHS">CSS :&nbsp;</label>
+    <input type="text" id="css" placeholder="Enter number"><br>
+    <label for="MATHS">JAVASCRIPT :</label>
+    <input type="text" id="js" placeholder="Enter number"><br><br>
+    <button onclick="btn()">Your Marks</button><br>
+    <br>
+    <div id="container">
+        <div id="subject">
+            <div id="h"></div>
+            <div id="c"></div>
+            <div id="j"></div>
+        </div>
+        <div id="marks">
+            <div id="avg"></div>
+            <div id="grade"></div>
+        </div>
+    </div>
+    <div id="note"></div>
+    </div>
+    <script>
+        function btn(){
+
+            var a = Number(document.getElementById("html").value);
+            var b= Number(document.getElementById("css").value);
+            var c=Number(document.getElementById("css").value);
+            var d=(a + b + c )/ 3;
+            document.getElementById("avg").innerHTML= "YOUR AVERGAE SCORE IS : " +parseInt(d) ;
+            document.getElementById("h").innerHTML="HTML :" + a;
+            document.getElementById("c").innerHTML="CSS :" + b;
+            document.getElementById("j").innerHTML="JAVASCRIPT :" + c;
+
+
+            if(d>85){
+                document.getElementById("grade").innerHTML="YOUR GRADE IS : A ";
+            }else if(d>70){
+                document.getElementById("grade").innerHTML="YOUR GRADE IS : B ";
+            }else if(d>55){
+                document.getElementById("grade").innerHTML="YOUR GRADE IS : C ";
+            }else if(d>35){
+                document.getElementById("grade").innerHTML="YOUR GRADE IS : D ";
+            }
+            else{
+                document.getElementById("grade").innerHTML="YOUR GRADE IS : F ";
+            }
+
+
+
+            if(d>35){
+                document.getElementById("note").innerHTML="CONGRATULATIONS YOU PASS THE EXAM !!";
+            }else{
+                document.getElementById("note").innerHTML="BETTER LUCK NEXT TIME !!";
+            }
+            
+        }  
+        
+        </script>     
+</body>
+    
+</html>
